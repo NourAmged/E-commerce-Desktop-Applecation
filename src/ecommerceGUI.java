@@ -16,7 +16,7 @@ public class ecommerceGUI extends Application {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("fx.fxml"));
             Scene scene = new Scene(root);
-            //scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
+            scene.getStylesheets().add(getClass().getResource("imgs-style/style.css").toExternalForm());
             stage.setScene(scene);
             stage.setTitle("E-commerce");
             stage.getIcons().add(new Image("imgs-style/57589.png"));

@@ -45,38 +45,14 @@
       <Label layoutX="435.0" layoutY="144.0" opacity="0.5" text="QUANTITIES" />
       <Label layoutX="650.0" layoutY="144.0" opacity="0.5" text="PRICE" />
       <Label layoutX="853.0" layoutY="144.0" opacity="0.5" text="TOTAL" />
-      <Button fx:id="increment" layoutX="498.0" layoutY="201.0" mnemonicParsing="false" onAction="#increment" prefHeight="30.0" prefWidth="0.0" text="+">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
+      <Button fx:id="increment" layoutX="498.0" layoutY="204.0" mnemonicParsing="false" onAction="#increment" prefHeight="35.0" prefWidth="60.0" style="-fx-background-color: green; -fx-text-fill: white;" styleClass="add" text="Add" />
       <Label fx:id="count" layoutX="465.0" layoutY="213.0" text="0" />
-      <Button fx:id="dec" layoutX="401.0" layoutY="200.0" mnemonicParsing="false" onAction="#decrement" prefHeight="30.0" prefWidth="28.0" text="-">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="increment2" layoutX="498.0" layoutY="354.0" mnemonicParsing="false" onAction="#increment2" prefHeight="30.0" prefWidth="28.0" text="+">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
+      <Button fx:id="dec" layoutX="375.0" layoutY="204.0" mnemonicParsing="false" onAction="#decrement" prefHeight="35.0" prefWidth="60.0" style="-fx-background-color: red; -fx-text-fill: white;" styleClass="rmv" text="Remove" />
+      <Button fx:id="increment2" layoutX="498.0" layoutY="358.0" mnemonicParsing="false" onAction="#increment2" prefHeight="35.0" prefWidth="60.0" styleClass="add" text="Add" />
       <Label fx:id="count2" layoutX="465.0" layoutY="367.0" text="0" />
-      <Button fx:id="dec2" layoutX="401.0" layoutY="354.0" mnemonicParsing="false" onAction="#decrement2" prefHeight="30.0" prefWidth="28.0" text="-">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="increment3" layoutX="498.0" layoutY="517.0" mnemonicParsing="false" onAction="#increment3" prefHeight="30.0" prefWidth="28.0" text="+">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="dec3" layoutX="401.0" layoutY="517.0" mnemonicParsing="false" onAction="#decrement3" prefHeight="30.0" prefWidth="28.0" text="-">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
+      <Button fx:id="dec2" layoutX="375.0" layoutY="360.0" mnemonicParsing="false" onAction="#decrement2" prefHeight="35.0" prefWidth="60.0" styleClass="rmv" text="Remove" />
+      <Button fx:id="increment3" layoutX="498.0" layoutY="521.0" mnemonicParsing="false" onAction="#increment3" prefHeight="35.0" prefWidth="60.0" styleClass="add" text="Add" />
+      <Button fx:id="dec3" layoutX="375.0" layoutY="521.0" mnemonicParsing="false" onAction="#decrement3" prefHeight="35.0" prefWidth="60.0" styleClass="rmv" text="Remvoe" />
       <Label fx:id="count3" layoutX="465.0" layoutY="530.0" text="0" />
       <Label fx:id="price1" layoutX="652.0" layoutY="213.0" text="Label">
          <font>

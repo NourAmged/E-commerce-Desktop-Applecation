@@ -1,0 +1,10 @@
+.add{
+    -fx-background-color:green;
+    -fx-text-fill:white;
+}
+
+.rmv{
+
+    -fx-background-color:red;
+    -fx-text-fill:white;
+}
