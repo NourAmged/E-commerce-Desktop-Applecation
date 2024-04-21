@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainfx">
+   <children>
+      <Label layoutX="82.0" layoutY="56.0" prefHeight="35.0" prefWidth="173.0" text="Shopping cart">
+         <font>
+            <Font name="Ebrima Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="836.0" layoutY="58.0" text="3 Items">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1019.0" layoutY="58.0" text="Order summary">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="131.0" fitWidth="86.0" layoutX="82.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs-style/t-shirt.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="128.0" fitWidth="110.0" layoutX="70.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs-style/phone.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="104.0" fitWidth="110.0" layoutX="70.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs-style/book.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="82.0" layoutY="144.0" opacity="0.51" text="PRODUCT DETAILS" />
+      <Label layoutX="435.0" layoutY="144.0" opacity="0.5" text="QUANTITIES" />
+      <Label layoutX="650.0" layoutY="144.0" opacity="0.5" text="PRICE" />
+      <Label layoutX="853.0" layoutY="144.0" opacity="0.5" text="TOTAL" />
+      <Button fx:id="increment" layoutX="498.0" layoutY="201.0" mnemonicParsing="false" onAction="#increment" prefHeight="30.0" prefWidth="0.0" text="+">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="count" layoutX="465.0" layoutY="213.0" text="0" />
+      <Button fx:id="dec" layoutX="401.0" layoutY="200.0" mnemonicParsing="false" onAction="#decrement" prefHeight="30.0" prefWidth="28.0" text="-">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="increment2" layoutX="498.0" layoutY="354.0" mnemonicParsing="false" onAction="#increment2" prefHeight="30.0" prefWidth="28.0" text="+">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="count2" layoutX="465.0" layoutY="367.0" text="0" />
+      <Button fx:id="dec2" layoutX="401.0" layoutY="354.0" mnemonicParsing="false" onAction="#decrement2" prefHeight="30.0" prefWidth="28.0" text="-">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="increment3" layoutX="498.0" layoutY="517.0" mnemonicParsing="false" onAction="#increment3" prefHeight="30.0" prefWidth="28.0" text="+">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="dec3" layoutX="401.0" layoutY="517.0" mnemonicParsing="false" onAction="#decrement3" prefHeight="30.0" prefWidth="28.0" text="-">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="count3" layoutX="465.0" layoutY="530.0" text="0" />
+      <Label fx:id="price1" layoutX="652.0" layoutY="213.0" text="Label">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="price2" layoutX="652.0" layoutY="367.0" text="Label">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="price3" layoutX="652.0" layoutY="530.0" text="Label">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="total1" layoutX="857.0" layoutY="213.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="total2" layoutX="857.0" layoutY="367.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="total3" layoutX="857.0" layoutY="530.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="name1" layoutX="189.0" layoutY="205.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="name2" layoutX="189.0" layoutY="355.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="name3" layoutX="189.0" layoutY="518.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Line endX="162.0" layoutX="1100.0" layoutY="112.0" opacity="0.6" startX="-80.0" />
+      <TextField fx:id="name" layoutX="1005.0" layoutY="243.0" onAction="#nameField" prefHeight="25.0" prefWidth="155.0" />
+      <TextField fx:id="id" layoutX="1003.0" layoutY="348.0" onAction="#idField" prefHeight="25.0" prefWidth="155.0" />
+      <TextField fx:id="address" layoutX="1003.0" layoutY="477.0" onAction="#addressField" prefHeight="25.0" prefWidth="155.0" />
+      <Label layoutX="1005.0" layoutY="205.0" text="Enter your name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="1005.0" layoutY="313.0" text="Enter your ID:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="1005.0" layoutY="443.0" text="Enter your address:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Line endX="285.0" layoutX="979.0" layoutY="543.0" opacity="0.6" startX="27.0" />
+      <Button fx:id="checkOut" layoutX="993.0" layoutY="625.0" mnemonicParsing="false" onAction="#checkout" prefHeight="35.0" prefWidth="270.0" style="-fx-background-color: #4f46e5;" text="CHECKOUT" textFill="#f8fafc">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
