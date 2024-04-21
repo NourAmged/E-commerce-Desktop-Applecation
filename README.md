@@ -2,8 +2,8 @@
 
 Simple E-Commerce desktop application
 
-![image sample](src\imgs-style\img.png)
-![output sample](src\imgs-style\ouput.png)
+![image sample](src\imgs-style\img.png)<br>
+![output sample](src\imgs-style\ouput.png)<br>
 
 ## **Built With**
 - ![java logo](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
